@@ -37,8 +37,13 @@
             <input type="text" id="name6" class="form-control" name="student_subject" required="" value="{{$studentprofile->student_subject}}" placeholder="Subject">
           </fieldset>
           <fieldset class="form-group">
-            <label for="name4">Home Address</label>
-            <textarea class="wp-form-control wpcf7-textarea" id="name7" name="student_address" required="" value="" cols="30" rows="10" placeholder="Your home address">{{$studentprofile->student_address}}</textarea>
+            <label for="name5">Year</label>
+            <input type="number" id="name5" class="form-control" name="year" required="" value="{{$studentprofile->year}}" placeholder="Year">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="name6">Home Address</label>
+            <textarea class="wp-form-control wpcf7-textarea" id="name6" name="student_address" required="" value="" cols="30" rows="10" placeholder="Your home
+            address">{{$studentprofile->student_address}}</textarea>
           </fieldset>
           <fieldset>
             <input type="submit" name="submit" value="Update Profile" style="cursor: pointer;" class="btn btn-primary">

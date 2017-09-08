@@ -47,6 +47,7 @@ class ApplicationController extends Controller
             'student_email'  =>  'required|max:55|email|unique:student_profiles',
             'profile'  =>  'required|max:55|unique:student_profiles',
             'student_subject'  =>  'required|max:55|unique:student_profiles',
+            'year'  =>  'required',
             'student_address'  =>  'required|max:191',
             ]);
         $studentprofile = new StudentProfile;
@@ -56,6 +57,7 @@ class ApplicationController extends Controller
         $studentprofile->student_mobileNumber = $request->student_mobileNumber;
         $studentprofile->student_email = $request->student_email;
         $studentprofile->student_subject = $request->student_subject;
+        $studentprofile->year = $request->year;
         $studentprofile->student_address = $request->student_address;
         
         // file upload section

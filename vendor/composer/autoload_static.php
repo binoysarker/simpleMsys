@@ -271,6 +271,7 @@ class ComposerStaticInit378c6e56ca249f0358900a89d84ff264
 
     public static $classMap = array (
         'App\\AcademicCalander' => __DIR__ . '/../..' . '/app/AcademicCalander.php',
+        'App\\Archive' => __DIR__ . '/../..' . '/app/Archive.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AdmissionResultController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdmissionResultController.php',

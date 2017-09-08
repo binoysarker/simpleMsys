@@ -38,12 +38,16 @@
             <input type="text" id="name5" name="student_subject" class="form-control" required="" placeholder="Subject">
           </fieldset>
           <fieldset class="form-group">
-            <label for="name6">Upload Image</label>
-            <input type="file" id="name6" name="profile" class="form-control" required="" placeholder="Upload Image">
+            <label for="name6">Year</label>
+            <input type="number" id="name6" name="year" class="form-control" required="" placeholder="Year">
           </fieldset>
           <fieldset class="form-group">
-            <label for="name7">student Address</label>
-            <textarea class="form-control"  id="name7" name="student_address" rows="5" required="" placeholder="Your home address"></textarea>
+            <label for="name7">Upload Image</label>
+            <input type="file" id="name7" name="profile" class="form-control" required="" placeholder="Upload Image">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="name8">student Address</label>
+            <textarea class="form-control"  id="name8" name="student_address" rows="5" required="" placeholder="Your home address"></textarea>
           </fieldset>
           <fieldset >
             <input type="submit" name="submit" class="btn btn-primary" style="cursor: pointer;" value="Apply Now" >

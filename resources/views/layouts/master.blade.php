@@ -19,7 +19,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <div class="captionHeading"><p class="table-bordered text-white " id="caption"><span><a href="">some text here</a></span></p></div>
+          <div class="captionHeading">
+            <marquee behavior="" direction="right"><a href="">some text here</a></marquee></div>
         </div>
       </div>
     </div>
@@ -30,12 +31,13 @@
     @yield('admission')
     @yield('student-profile')
     @yield('ajax-list')
+    @yield('archive')
 
 
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row">
         <div class="col-lg-12">
-          <footer>
+          <footer class="footer">
             <div >
               <p class="bg-inverse text-white p-3 text-center">Copyright&copy; Binoy Sarker</p>
             </div>

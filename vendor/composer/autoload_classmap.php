@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\AcademicCalander' => $baseDir . '/app/AcademicCalander.php',
+    'App\\Archive' => $baseDir . '/app/Archive.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\AdmissionResultController' => $baseDir . '/app/Http/Controllers/AdmissionResultController.php',

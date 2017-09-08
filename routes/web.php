@@ -31,6 +31,8 @@ Route::get('/msys', 'PagesController@getIndex');
 Route::get('/msys/contact', 'PagesController@getContact');
 Route::get('/msys/404', 'PagesController@get404');
 
+Route::post('/msys/getResult','PagesController@getResult');
+
 
 /*
 student admission section
@@ -43,5 +45,4 @@ Route::resource('/msys/admission', 'AdmissionResultController');
 Student profile section
 */
 Route::resource('/msys/student-profile', 'ApplicationController');
-
 

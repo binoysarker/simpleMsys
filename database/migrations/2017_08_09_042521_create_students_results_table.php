@@ -15,6 +15,7 @@ class CreateStudentsResultsTable extends Migration
     {
         Schema::create('students_results', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('student_profile_id');
             $table->string('student_name',55);
             $table->integer('student_class');
             $table->integer('student_roll');

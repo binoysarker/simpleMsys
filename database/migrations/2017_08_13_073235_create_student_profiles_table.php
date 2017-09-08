@@ -21,6 +21,7 @@ class CreateStudentProfilesTable extends Migration
             $table->integer('student_mobileNumber');
             $table->string('student_email',55);
             $table->string('student_subject',55);
+            $table->integer('year');
             $table->string('profile',55);
             $table->string('student_address',191);
             $table->timestamps();

@@ -6,7 +6,7 @@
 @section('student-profile')
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-12">
 
         {{-- message section --}}
         @include('partials.message')
@@ -16,12 +16,14 @@
           <a href="{{ url('/msys/student-profile/create') }}" class="btn btn-info" title="">Create Student Profile</a>
           <thead>
             <tr>
+              <th>Serial No</th>
               <th>Name</th>
               <th>FatherName</th>
               <th>MotherName</th>
               <th>MobileNumber</th>
               <th>Email</th>
               <th>Subject</th>
+              <th>year</th>
               <th>Student Address</th>
               <th>Action</th>
             </tr>
@@ -31,12 +33,14 @@
             @foreach ($studentprofile as $profile)
               {{-- expr --}}
               <tr>
+                <td><a href="{{ url('/msys/student-profile/'.$profile->id) }}">{{substr($profile->id, 0,6)."..."}}</a></td>
                 <td><a href="{{ url('/msys/student-profile/'.$profile->id) }}">{{substr($profile->student_name, 0,6)."..."}}</a></td>
                 <td>{{substr($profile->student_fatherName, 0,6)."..."}}</td>
                 <td>{{substr($profile->student_motherName, 0,6)."..."}}</td>
                 <td>{{substr($profile->student_mobileNumber, 0,6)."..."}}</td>
                 <td>{{substr($profile->student_email, 0,6)."..."}}</td>
                 <td>{{substr($profile->student_subject, 0,6)."..."}}</td>
+                <td>{{substr($profile->year, 0,6)."..."}}</td>
                 <td>{{substr($profile->student_address, 0,6)."..."}}</td>
                 <td>
                   <form action="{{ url('msys/student-profile') }}{{'/'.$profile->id}}" method="post">

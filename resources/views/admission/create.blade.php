@@ -14,6 +14,8 @@
         <form action="{{ url('/msys/admission') }}" method="POST">
           {{csrf_field()}} 
           <fieldset class="form-group">
+            {{--hidden input for profile id--}}
+            <input type="hidden" name="student_profile_id" value="">
             <label for="name1">Student name</label>
             <input type="text" name="student_name" id="name1" class="form-control" required="" placeholder="Student name">
           </fieldset>
